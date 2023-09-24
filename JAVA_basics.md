@@ -1,4 +1,4 @@
-#JAVA Fundamentals
+# JAVA Fundamentals
 The main() method is the entry point into the application
 Basic Structure of a JAVA program
 - Functions - methods that execute a job
@@ -11,48 +11,48 @@ Naming Conventions
 - For classes we use PascalConvention
 - For functions we use camelCaseConvention
 
-###Anatomy of a JAVA Program
-- ####Document Section (Optional):
+### Anatomy of a JAVA Program
+- #### Document Section (Optional):
   - contains basic information about a JAVA program
   - The information includes the author's name, version, company name, and description of the program written in the form of comments
 
-- ####Package Declaration (Optional)
+- #### Package Declaration (Optional)
   - Decalare package name where the class is placed. There can only be one package per JAVA class
 
-- ####Import Statements
+- #### Import Statements
   - The package contains the many predefined classes and interfaces. 
   - If we want to use any class of a particular package, we need to import that class. 
   - The import statement represents the class stored in the other package. We use the import keyword to import the class.
 
-- ####Interface Section (Optional)
+- #### Interface Section (Optional)
   - We use the interface keyword to create an interface. An interface is a slightly different from the class. 
   - It contains only constants and method declarations. 
   - Another difference is that it cannot be instantiated. 
   - We can use interface in classes by using the implements keyword. An interface can also be used with other interfaces by using the extends keyword.
 
-- ####Class Definition
+- #### Class Definition
   - It is vital part of a Java program. Without the class, we cannot create any Java program. A Java program may contain more than one class definition. 
   - We use the class keyword to define the class. The class is a blueprint of a Java program. It contains information about user-defined methods, variables, and constants. 
   - Every Java program has at least one class that contains the main() method.
 
-- ####Class Variables and Constants
+- #### Class Variables and Constants
   - We define variables and constants that are to be used later in the program. 
   - In a Java program, the variables and constants are defined just after the class definition. 
   - The variables and constants store values of the parameters. It is used during the execution of the program. 
   - We can also decide and define the scope of variables by using the modifiers.
 
-- ####Main Method Class
+- #### Main Method Class
   - The execution of all Java programs starts from the main() method. In other words, it is an entry point of the class.
   - It must be inside the class. Inside the main method, we create objects and call the methods.
 
-- ####Methods and Behavior
+- #### Methods and Behavior
   - We define the functionality of the program by using the methods. 
   - The methods are the set of instructions that we want to perform. 
   - These instructions execute at runtime and perform the specified task.
 
-###Data Types in JAVA
+### Data Types in JAVA
 Variable are of some specific types and that is determined by Data Types. There are 2 different type of data types
-- ####Primitive Data Types (8)
+- #### Primitive Data Types (8)
   - byte: 
     - takes -128 to 127 values
     - Takes one byte
@@ -84,10 +84,10 @@ Variable are of some specific types and that is determined by Data Types. There 
   - bool
     - True or False
 
-- ####Non Primitive Data Types
+- #### Non Primitive Data Types
   - TODO
 
-###Literals
+### Literals
 - In order to chose the data type we first need to find the type of data we want to store. After that we need to analyze the MIN & MAX value we might use.
 - A constant value which can be assigned to the variable is literal
 - the value on the right side of equal to while declaration is literal
@@ -99,10 +99,10 @@ Variable are of some specific types and that is determined by Data Types. There 
   - true – Boolean literal 
   - “Kalra” – String literal
 
-###Keywords
+### Keywords
 - Words that are reserved and used by the Java compiler. They cannot be used as an Identifier.
 
-###Scanner Class
+### Scanner Class
 - Scanner class of java.util package is used to take input from the user's keyboard.
 - The Scanner class has many methods for taking input from the user depending upon the type of input. 
 - To use any of the methods of the Scanner class, first, we need to create an object of the Scanner class
@@ -114,27 +114,27 @@ Scanner S = new Scanner(System.in);  //(Read from the keyboard)
 int a = S.nextInt();  //(Method to read from the keyboard)
 ```
 
-###Operators
+### Operators
 An operator is a symbol that the compiler to perform a specific operation on operands.
-- ####Arithmetic Operators:
+- #### Arithmetic Operators:
   - Arithmetic operators are used to perform mathematical operations such as addition, division, etc on expressions. 
   - Arithmetic operators cannot work with Booleans. 
   - % operator can work on floats and doubles.
   - +,-,*,/,%,++,--
 
-- ####Comparison Operators:
+- #### Comparison Operators:
   - these operators are used to compare two operands.
   - ==, !=, >, <, >=, <=
 
-- ####Logical Operators:
+- #### Logical Operators:
   - These operators determine the logic in an expression containing two or more values or variables.
   - &&, ||, !
 
-- ####Bitwise Operators:
+- #### Bitwise Operators:
   - These operators perform the operations on every bit of a number.
   - &,|,^,<<,>>
 
-####Resulting data type after arithmetic operation
+#### Resulting data type after arithmetic operation
 - Result = byte + short -> integer 
 - Result = short + integer -> integer 
 - Result = long + float -> float 
@@ -144,7 +144,7 @@ An operator is a symbol that the compiler to perform a specific operation on ope
 - Result = long + double -> double 
 - Result = float + double -> double
 
-###Strings
+### Strings
 - A string is a sequence of characters. Strings are objects that represent a char array.
 - ```
   char[] str = {'K','A','L','R','A'};
@@ -155,7 +155,7 @@ An operator is a symbol that the compiler to perform a specific operation on ope
 - java.lang.String class is used to create a String object.
 - The string is a class but can be used as a data type.
 
-####Different ways to create a string in Java:
+#### Different ways to create a string in Java:
 - <b>By using string literal</b>
   - use double quotes("") to create string using string literal. 
   - Before creating a new string instance, JVM verifies if the same string is already present in the string pool or not. If it is already present, then JVM returns a reference to the pooled instance otherwise, a new string instance is created.
@@ -173,7 +173,7 @@ System.out.println(str1 == str2); // False
 ```
 Although the value of both the string object is the same, still false is displayed as output because str1 and str2 are two different string objects created in the heap. That's why it is not considered a good practice two compare two strings using the == operator. <i>Always use the equals() method to compare two strings in Java.</i>
 
-####String Methods
+#### String Methods
 Method	Description
 1. length(): Returns the length of String name. (5 in this case)
 2. toLowerCase(): Converts all the characters of the string to the lower case letters.
@@ -190,18 +190,18 @@ Method	Description
 13. equals(“Kalra”): Returns true if the given string is equal to “Kalra” false otherwise [Case sensitive]
 14.equalsIgnoreCase(“kalra”): Returns true if two strings are equal, ignoring the case of characters.
 
-###If-else Statements
+### If-else Statements
 If-else block is used to check conditions and execute a particular section of code for a specific condition.
 
-###Switch Case Statements
+### Switch Case Statements
 - Switch-Case is used when we have to make a choice between the number of alternatives for a given variable.
 - Variable can be an integer, character, or string in Java.
 - Every switch case must contain a default case. The default case is executed when all the other cases are false.
 - Never forget to include the <strong>break</strong> statement after every switch case otherwise the switch case will not terminate.
 
-###Loops
-- ####while loop
-- ####do-while Loop
+### Loops
+- #### while loop
+- #### do-while Loop
   - Do- while loop is similar to a while loop except for the fact that it is guaranteed to execute at least once. 
   - Use a do-while loop when the exact number of iterations is unknown, but you need to execute a code block at least once. 
   - After executing a part of a program for once, the rest of the code gets executed on the basis of a given boolean condition.
@@ -215,17 +215,17 @@ If-else block is used to check conditions and execute a particular section of co
   - <strong>Difference Between while loop and do-while loop:</strong>
     - while – checks the condition & executes the code. 
     - do-while – executes the code at least once and then checks the condition. Because of this reason, the code in the do-while loop executes at least once, even if the condition fails.
-- ####for loop
+- #### for loop
 
-####Break and Continue in Java
-- ####Break statement:
+#### Break and Continue in Java
+- #### Break statement:
   - The break statement is used to exit the loop irrespective of whether the condition is true or false. 
   - Whenever a ‘break’ is encountered inside the loop, the control is sent outside the loop.
-- ####Continue statement:
+- #### Continue statement:
   - The continue statement is used to immediately move to the next iteration of the loop. 
   - The control is taken to the next iteration thus skipping everything below ‘continue’ inside the loop for that iteration.
 
-###Arrays
+### Arrays
 - An array is a collection of similar types of data having contiguous memory allocation.
 - The size of the array can not be increased at run time therefore we can store only a fixed size of elements in array.
 - Why to use Array? Accessing is faster!!
@@ -233,21 +233,21 @@ If-else block is used to check conditions and execute a particular section of co
 int[] marks; //Declaration
 marks = new int[5]; //
 ```
-####For Each loop
+#### For Each loop
 - same like for loop
 ```
 for (int element:Arr) {
     System.out.println(element);    //Prints all the elements
 }
 ```
-####Multidimensional Arrays
+#### Multidimensional Arrays
 - Array of Arrays
 ```
 int[][] arr = new int[n][n]; //2-D array
 int[][][] arr1 = new int[n][n][n]; //3-D array
 ```
 
-###Methods
+### Methods
 - Sometimes our program grows in size, and we want to separate the logic of the main method from the other methods.
 - DRY: Don't repeat yourself
 ```
@@ -271,14 +271,14 @@ When we don’t want our method to return anything, we use void as the return ty
 - In Java, the main() method is static, so that JVM can call the main() method directly without allocating any extra memory for object creation.
 - All the objects share the static method in a class.
 
-####Method Overloading
+#### Method Overloading
 - In Java, it is possible for a class to contain two or more methods with the same name but with different parameters. Such methods are called Overloaded methods. 
 - Method overloading is used to increase the readability of the program.
-####Ways to perform method overloading:
+#### Ways to perform method overloading:
 - By changing the return type of the different methods 
 - By changing the number of arguments accepted by the method
 
-###Variable Arguments (VarArgs)
+### Variable Arguments (VarArgs)
 - let's suppose you want to overload an "add" method. The "add" method will accept one argument for the first time and every time the number of arguments passed will be incremented by 1 till the number of arguments is equaled to 10. 
 - One approach to solve this problem is to overload the "add" method 10 times. But is it the optimal approach? What if I say that the number of arguments passed will be incremented by 1 till the number of arguments is equaled to 1000. Do you think that it is good practice to overload a method 1000 times? 
 - To solve this problem of method overloading, Variable Arguments(Varargs) were introduced with the release of JDK 5. 
@@ -290,18 +290,18 @@ public static void foo(int …arr)
 }
 ```
 
-###Recursion
+### Recursion
 - In programming, recursion is a technique through which a function calls itself. 
 - With the help of recursion, we can break down complex problems into simple problems.
 ```
 //factorial(n) = n*factorial(n-1)                 [n >= 1]
 ```
 
-##Object Oriented Programming
+## Object Oriented Programming
 Solving a problem by creating objects
-###Class
+### Class
 A class is a blueprint for creating objects
-###Object
-###Four pillars of Object-Oriented-Programming Language :
-- ####Abstraction
+### Object
+### Four pillars of Object-Oriented-Programming Language :
+- #### Abstraction
 - 
